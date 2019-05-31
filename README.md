@@ -24,13 +24,24 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+        React JS is an open-source JavaScript library which is used for building UIs specifically for single page applications. React also allows us to create reusable UI components. 
 
-- [ ] Describe state.
 
-- [ ] Describe props.
+- [x] What does it mean to _think_ in react?
+
+        Breaking the UI in to a component heirarchy. 
+        Single Responsibility Principle - Each component should only do one thing. 
+
+- [x] Describe state.
+
+        State is the place where the data comes from.  It is an object of a React class component that holds some information that may change over the lifetime of the component.
+
+- [x] Describe props.
+
+        React allows us to pass information to a component using props. Props are a kind of global variable or object.
+        
 
 ## Project Set Up
 

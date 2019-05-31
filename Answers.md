@@ -11,6 +11,12 @@
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+
+
 1.  Describe state.
 
+        State is the place where the data comes from.  It is an object of a React class component that holds some information that may change over the lifetime of the component.
+
 1.  Describe props.
+
+        React allows us to pass information to a component using props. Props are a kind of global variable or object.
