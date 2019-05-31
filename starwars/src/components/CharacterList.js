@@ -4,12 +4,10 @@ import './StarWars.css';
 
 const CharacterList = props => {
     return (
-
         <div className='character-list'>
-            
-            {props.starwarsChars.map(item => {
+            {props.starwarsChars.map((item,index) => {
                 return (
-                    <Character key={item.id} item={item} />
+                    <Character key={index} item={item} />
                     );
             })}
         </div>

@@ -16,6 +16,8 @@ class App extends Component {
     this.getCharacters('https://swapi.co/api/people/');
   }
 
+
+
   getCharacters = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -25,26 +27,24 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ 
+        this.setState({
                         starwarsChars: data.results, 
-                        next: data.next});
+                        next: data.next                        
+                      });
         })
       .catch(err => {
         throw new Error(err);
       });
   };
 
-
-
   nextItems = () => {
-    console.log(this.state.next)
     this.getCharacters(this.state.next);
   }
 
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className='App'>
+        <h1 className='Header'>React Wars</h1>
         <button className='next-btn' onClick={this.nextItems}>Next you click</button>
 
         <CharacterList starwarsChars={this.state.starwarsChars} />
